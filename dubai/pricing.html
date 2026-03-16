@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Infrastructure Plans - Luxury Web Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #C5A059;
+            --dark: #1A1A1A;
+            --slate: #4A4A4A;
+            --cream: #F9F7F2;
+            --white: #FFFFFF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cream);
+            color: var(--dark);
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .subtitle {
+            color: var(--slate);
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            align-items: stretch;
+        }
+
+        .card {
+            background: var(--white);
+            border: 1px solid #EAE0D5;
+            padding: 45px 35px;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+        }
+
+        .card.featured {
+            border: 2px solid var(--gold);
+        }
+
+        .badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: var(--gold);
+            color: white;
+            padding: 5px 15px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .plan-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .period {
+            font-size: 0.9rem;
+            color: var(--slate);
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .domain-preview {
+            background: #F4F1EE;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-bottom: 25px;
+            border-left: 3px solid var(--gold);
+        }
+
+        .domain-label {
+            display: block;
+            font-weight: 700;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 4px;
+        }
+
+        .url-text {
+            color: var(--slate);
+            font-family: monospace;
+        }
+
+        .features {
+            list-style: none;
+            margin-bottom: 35px;
+            flex-grow: 1;
+        }
+
+        .features li {
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .features li::before {
+            content: "—";
+            margin-right: 10px;
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        .cta {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            background: var(--dark);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+
+        .cta:hover {
+            background: var(--gold);
+        }
+
+        .cta-gold {
+            background: var(--gold);
+        }
+
+        .cta-gold:hover {
+            background: #A68545;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .pricing-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Digital Infrastructure Plans</h1>
+    <p class="subtitle">Secure a high-end European aesthetic for your brand with our curated hosting and development tiers.</p>
+
+    <div class="pricing-grid">
+        <div class="card">
+            <h2 class="plan-name">Digital Starter</h2>
+            <div class="price">AED 1,500</div>
+            <span class="period">One-time setup fee</span>
+
+            <div class="domain-preview">
+                <span class="domain-label">Site Address Preview</span>
+                <span class="url-text">brandname.vercel.app</span>
+            </div>
+
+            <ul class="features">
+                <li>Bespoke Landing Page Design</li>
+                <li>Full Mobile Optimization</li>
+                <li>Standard SSL Security</li>
+                <li>Hosting via Vercel Network</li>
+            </ul>
+
+            <a href="#" class="cta">Select Plan</a>
+        </div>
+
+        <div class="card featured">
+            <div class="badge">Best Seller</div>
+            <h2 class="plan-name">Business Continuity</h2>
+            <div class="price">AED 2,500</div>
+            <span class="period">Per year (Setup + Maintenance)</span>
+
+            <div class="domain-preview">
+                <span class="domain-label">Site Address Preview</span>
+                <span class="url-text">brandname.vercel.app</span>
+            </div>
+
+            <ul class="features">
+                <li>All Starter Features</li>
+                <li>Annual Technical Maintenance</li>
+                <li>Content Management Support</li>
+                <li>Bi-annual SEO Checkups</li>
+                <li>Priority Email Support</li>
+            </ul>
+
+            <a href="#" class="cta cta-gold">Select Plan</a>
+        </div>
+
+        <div class="card featured">
+            <div class="badge">Elite Choice</div>
+            <h2 class="plan-name">Elite Brand Identity</h2>
+            <div class="price">AED 4,000</div>
+            <span class="period">Per year (Full Management)</span>
+
+            <div class="domain-preview">
+                <span class="domain-label">Site Address Preview</span>
+                <span class="url-text">www.brandname.ae</span>
+            </div>
+
+            <ul class="features">
+                <li>All Continuity Features</li>
+                <li><strong>Custom .ae or .com Domain</strong></li>
+                <li>Professional Brand Authority</li>
+                <li>Business Email Accounts</li>
+                <li>Premium CDN for Local Speed</li>
+            </ul>
+
+            <a href="#" class="cta cta-gold">Go Premium</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
